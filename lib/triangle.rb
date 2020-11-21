@@ -15,5 +15,6 @@ class Triangle_error < StandardError
       return :equilateral
     end
   end
+end
 
 end
