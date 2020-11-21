@@ -13,6 +13,7 @@ end
 
 def kind
   triangle_real_sides?
+  triangle_inequality?
     if @side_1 == @side_2 && @side_2 == @side_3
       :equilateral
     elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3
@@ -25,6 +26,10 @@ def kind
   def triangle_real_sides?
     sides_array = [@side_1, @side_2, @side_3]
     raise TriangleError if sides_array.detect {|sides| sides <= 0}
+  end
+
+  def trinagle_inequality?
+    triangle_array = [@side_1, @side_2, @side_3]
   end
 
 
