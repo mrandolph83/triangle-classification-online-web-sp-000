@@ -28,7 +28,7 @@ def kind
     raise TriangleError if sides_array.detect {|sides| sides <= 0}
   end
 
-  def trinagle_equality?
+  def triangle_equality?
     raise TriangleError if @side_1 + @side_2 <= @side_3 || @side_2 + @side_3 <= @side_1 || @side_3 + @side_1 <= @side_2
   end
 
