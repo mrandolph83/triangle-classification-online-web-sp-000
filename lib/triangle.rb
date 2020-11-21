@@ -13,7 +13,7 @@ class Triangle_error < StandardError
 
     if @triangle_sides[0] == @triangle_sides[1] && @triangle_sides[2] == @triangle_sides[1]
       return :equilateral
-
+    end
 
   end
 
