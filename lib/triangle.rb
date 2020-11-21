@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
 
-class TriangleError < StandardError
+
 
 attr_reader :side_1, :side_2, :side_3
 
@@ -22,7 +22,7 @@ def kind
   end
 
 
-
+class TriangleError < StandardError
 
   end
 end
