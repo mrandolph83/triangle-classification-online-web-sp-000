@@ -25,7 +25,6 @@ def kind
   def triangle_real_sides?
     sides_array = [@side_1, @side_2, @side_3]
     raise TriangleError if sides_array.detect {|sides| sides <= 0}
-    end
   end
 
 
