@@ -12,7 +12,7 @@ def initialize(side_1, side_2, side_3)
 end
 
 def kind
-  triangle_real?
+  triangle_real_sides?
     if @side_1 == @side_2 && @side_2 == @side_3
       :equilateral
     elsif @side_1 == @side_2 || @side_2 == @side_3 || @side_1 == @side_3
@@ -22,9 +22,9 @@ def kind
     end
   end
 
-  def triangle_real?
-    if
-      @side_1 < 0 && @side_2 < 0 && @side_3 < 0
+  def triangle_real_sides?
+    sides_array = [@side_1, @side_2, @side_3]
+    raise TriangleError if sides_array.detect {|sides| sides <= 0}
     end
   end
 
